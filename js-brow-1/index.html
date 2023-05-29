@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Capturar y mostrar texto en mayúsculas</title>
+  <script>
+    window.onload = function() {
+      // Obtener referencias a los elementos del DOM
+      var inputTexto = document.getElementById("inputTexto");
+      var parrafo = document.getElementById("parrafo");
+      var boton = document.getElementById("boton");
+
+      // Agregar un evento de escucha al campo de entrada de texto
+      inputTexto.addEventListener("input", function() {
+        // Obtener el valor del campo de entrada
+        var texto = inputTexto.value;
+
+        // Convertir el texto a mayúsculas
+        var textoEnMayusculas = texto.toUpperCase();
+
+        // Mostrar el texto en mayúsculas en el párrafo
+        parrafo.textContent = textoEnMayusculas;
+      });
+
+      // Agregar un evento de escucha al botón
+      boton.addEventListener("click", function() {
+        // Obtener el valor del campo de entrada
+        var texto = inputTexto.value;
+
+        // Convertir el texto a mayúsculas
+        var textoEnMayusculas = texto.toUpperCase();
+
+        // Mostrar el texto en mayúsculas en el párrafo
+        parrafo.textContent = textoEnMayusculas;
+      });
+    };
+  </script>
+</head>
+<body>
+  <input type="text" id="inputTexto" placeholder="Escribe algo...">
+  <button id="boton">Mostrar en mayúsculas</button>
+  <p id="parrafo"></p>
+</body>
+</html>
