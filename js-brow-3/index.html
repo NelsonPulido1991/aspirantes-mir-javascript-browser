@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <h3>Formulario De Nombres</h3>
+    <form>
+        <label for="name">Ingresa Nombre</label><br>
+        <input type="text" id="taskInput1" placeholder="Ingresa Nombre"><br>
+        <label for="email">Ingresa email</label><br>
+        <input type="text" id="taskInput2" placeholder="Ingresa email">
+        <button type="button" onclick="captura()">Add</button>
+    </form>
+
+    <h4>Datos almacenados</h4>
+    <ul id="taskList"></ul>
+    <p id="noDataMessage" style="display: none;">Sin datos</p>
+
+    <button id="deleteAllButton">Eliminar lista</button>
+
+    <script src="index.js"></script>
+</body>
+</html>
